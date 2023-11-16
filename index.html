@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HOME</title>
 </head>
 <style>
     body {
@@ -26,10 +26,101 @@
     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
 }
+
+.web-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+  padding: 16px;
+  text-align: center;
+  background-color: #b9b6b6;
+  transition: 0.3s;
+  width: 25%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(255, 255, 255);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.row {margin: 0 -5px;}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
 <body>
     <div>
         <center><h1>Team:Chada</h1></center>
+    </div>
+    <div>
+        <center><img src="img/Chada.png" alt  height="300" width="300"></center>
+    </div>
+    <div class="web-container">
+        <div class="row">
+            <div class="column">
+                <div class="card me-5" style="width: 18rem; margin: 20px;">
+                    <img src="img/1.jpg" alt="avatar" style="height: 100%;" width="100%">
+                        <div class="container">
+                            <center><h4><b>Learn</b></h4></center>
+                            <center><p>สรุปเนื้อหาที่เรียน</p></center>
+                            <div class="card-footer text-end border-0">
+                                <center><a href="learn.html"><button>Go Learn</button></a></center>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" style="width: 18rem; margin: 20px;">
+                    <img src="img/2.jpg" alt="avatar" style="height: 100%;" width="100%">
+                        <div class="container">
+                            <center><h4><b>Team</b></h4></center>
+                            <center><p>สมาชิก</p></center>
+                            <div class="card-footer text-end border-0">
+                                <center><a href="team.html"><button>Team</button></a></center>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card" style="width: 18rem; margin: 20px;">
+                    <img src="img/3.jpg" alt="avatar" style="height: 100%;" width="100%">
+                        <div class="container">
+                            <center><h4><b>Test</b></h4></center>
+                            <center><p>Popup And IP</p></center>
+                            <div class="card-footer text-end border-0">
+                                <center><a href="test.html"><button>Test</button></a></center>
+                            </div>
+                        </div>
+                </div>
+            </div>    
+        </div>
     </div>
 </body>
 </html>

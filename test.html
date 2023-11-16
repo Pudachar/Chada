@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        }
+
+    header {
+         background-color: #507bf39e;
+        color: #000000;
+        padding: 10px;
+        text-align: center;
+    }
+
+    article {
+        margin-top: 20px;
+    }
+
+    #popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #popupContainer img {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    max-width: 80%;
+    max-height: 80%;
+    }
+
+    #closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TEST</h1>
+    </header>
+
+    <p>สมาชิก -></p><button id="popupButton">แสดงรูปภาพ</button>
+
+    <div id="popupContainer">
+        <span class="close" id="closeButton">&times;</span>
+        <img src="img/Chada Team.png" alt="รูปภาพ">
+    </div>
+    
+    <div>
+    <p>แสดง IP เครื่อง</p>
+    <a href="http://ip-api.com/php/?fields=61439" target="_blank" ><button>IPเครื่อง</button></a>
+    </div>
+
+    <script src="script.js"></script>
+    <p>
+        <center><a href="index.html"><button>HOME</button></a></center>
+    </p>
+
+</body>
+</html>
